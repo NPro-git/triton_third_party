@@ -166,7 +166,7 @@ ExternalProject_Add(protobuf
     -DCMAKE_BUILD_TYPE:STRING=RELEASE
     -DBUILD_SHARED_LIBS:STRING=no
     -DCMAKE_INSTALL_PREFIX:PATH=${TRITON_THIRD_PARTY_INSTALL_PREFIX}/protobuf
-  PATCH_COMMAND git cherry-pick -n f180289c4670ca1afde5865bb8a7f2b61a3efcc5
+  # PATCH_COMMAND git cherry-pick -n f180289c4670ca1afde5865bb8a7f2b61a3efcc5
   DEPENDS grpc-repo
 )
 #
